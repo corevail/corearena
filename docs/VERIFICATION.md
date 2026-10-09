@@ -1,6 +1,6 @@
 # Local verification — 2026-10-09
 
-Verified on arm64 macOS with Apple Clang 21.0.0 and CMake. The local results below are separate from remote CI. The published source also passed the Linux/macOS GitHub Actions matrix: [C11 checks, run 37919158090](https://github.com/Borep1945/corearena/actions/runs/37919158090), commit `286d6240fadc37710e92c1b90d199930f629ebe7`.
+Verified on arm64 macOS with Apple Clang 21.0.0 and CMake. The local results below are separate from remote CI. The published source also passed the Linux/macOS GitHub Actions matrix: [C11 checks, run 37919158090](https://github.com/corevail/corearena/actions/runs/37919158090), commit `286d6240fadc37710e92c1b90d199930f629ebe7`.
 
 - Debug build: C11, `-Wall -Wextra -Wpedantic -Wconversion -Wshadow -Werror`, AddressSanitizer and UndefinedBehaviorSanitizer enabled.
 - `ctest --test-dir build --output-on-failure`: 1/1 executable passed. Checks exercise multiple alignments, exhausted arenas/pools, arithmetic overflow, zero initialization, mark ownership and generation, repeated reset, foreign/interior/double free, and destruction.
