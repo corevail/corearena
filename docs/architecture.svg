@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-label="Illustration of arena and pool allocation layout">
+<rect width="1200" height="480" rx="24" fill="#10151e"/>
+<g font-family="ui-monospace,Menlo,monospace">
+<text x="48" y="64" fill="#eff6ff" font-size="32" font-weight="bold">corearena</text>
+<text x="48" y="98" fill="#97a6bd" font-size="15">C11 · explicit lifetimes · checked alignment · bounded storage</text>
+<text x="48" y="158" fill="#f0f4ff" font-size="19">ARENA / append allocations, reset together</text>
+<rect x="48" y="186" width="1104" height="64" rx="8" fill="#1e293b"/>
+<rect x="48" y="186" width="170" height="64" rx="8" fill="#27cbb2"/>
+<rect x="226" y="186" width="245" height="64" fill="#3d8cdd"/>
+<rect x="479" y="186" width="198" height="64" fill="#9b7bf5"/>
+<g fill="#10151e" font-size="16"><text x="78" y="224">payload A</text><text x="254" y="224">payload B</text><text x="505" y="224">payload C</text></g>
+<text x="875" y="224" fill="#97a6bd" font-size="16">available capacity</text>
+<path d="M 681 262 L 681 282" stroke="#f1f5f9" stroke-width="2"/><text x="697" y="279" fill="#97a6bd" font-size="14">offset / aligned next allocation</text>
+<text x="48" y="335" fill="#f0f4ff" font-size="19">POOL / fixed blocks, individual reuse</text>
+<g stroke="#10151e" stroke-width="8"><rect x="48" y="361" width="138" height="60" fill="#27cbb2"/><rect x="186" y="361" width="138" height="60" fill="#1e293b"/><rect x="324" y="361" width="138" height="60" fill="#27cbb2"/><rect x="462" y="361" width="138" height="60" fill="#1e293b"/><rect x="600" y="361" width="138" height="60" fill="#27cbb2"/><rect x="738" y="361" width="138" height="60" fill="#1e293b"/><rect x="876" y="361" width="138" height="60" fill="#1e293b"/><rect x="1014" y="361" width="138" height="60" fill="#27cbb2"/></g>
+<text x="48" y="454" fill="#97a6bd" font-size="14">Architecture illustration · occupied blocks in mint · free-list and occupancy metadata stored separately</text>
+</g></svg>

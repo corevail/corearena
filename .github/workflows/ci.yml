@@ -1,0 +1,16 @@
+name: C11 checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DCOREARENA_SANITIZE=ON
+      - run: cmake --build build --parallel
+      - run: ctest --test-dir build --output-on-failure
+      - run: ./build/frame_example
